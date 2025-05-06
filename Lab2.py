@@ -16,14 +16,15 @@ def classify_bmi(bmi):
         returnvalue = -1
         print("Underweight")
     else:
+        returnvalue = None
         print("Impossible BMI")
 
     return returnvalue
 
 def app():
-    output = calculate_bmi(1.79,50.0)
+    output = calculate_bmi(1.59,60.0)
     returnvalue = classify_bmi(output)
-    print("return value =", returnvalue)
+    print("Return Value is: ", returnvalue)
     return
 if __name__ == "__main__":
     app()
